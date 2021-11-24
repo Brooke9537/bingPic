@@ -48,7 +48,7 @@ func main() {
 		c.Redirect(302, `https://s.cn.bing.net`+BingUrl)
 	})
 	srv := &http.Server{
-		Addr:    "127.0.0.1:1000",
+		Addr:    "0.0.0.0:1000",
 		Handler: route,
 	}
 
